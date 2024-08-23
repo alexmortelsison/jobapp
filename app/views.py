@@ -6,5 +6,5 @@ from django.shortcuts import render
 def hello(request):
     return HttpResponse("Hello World")
 
-def job_detail(request):
-    return HttpResponse("Job detail page")
+def job_detail(request, id):
+    return HttpResponse(f"Job detail page{id}")
